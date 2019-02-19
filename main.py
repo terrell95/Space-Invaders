@@ -39,6 +39,9 @@ while player1.is_alive:
             elif event.key == pygame.K_RIGHT:
                 player1.xcor += player1.speed   
 
+    gameDisplay.blit(gameDisplay, (0,0))
+    gameDisplay.fill((0,0,0))            
+
     player1.show()
 
     pygame.display.update()
